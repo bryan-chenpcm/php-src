@@ -90,6 +90,12 @@ function get_windows_matrix_include(array $branches) {
             'zts' => false,
             'opcache' => false,
         ];
+        $jobs[] = [
+            'branch' => $branch,
+            'x64' => true,
+            'zts' => false,
+            'opcache' => true,
+        ];
     }
     return $jobs;
 }
