@@ -16,6 +16,7 @@ set DEPS_DIR=%PHP_BUILD_CACHE_BASE_DIR%\deps-%BRANCH%-%PHP_SDK_VS%-%PHP_SDK_ARCH
 rem SDK is cached, deps info is cached as well
 echo Updating dependencies in %DEPS_DIR%
 cmd /c phpsdk_deps --update --no-backup --branch %BRANCH% --stability %STABILITY% --deps %DEPS_DIR% --crt %PHP_BUILD_CRT%
+
 if %errorlevel% neq 0 exit /b 3
 
 rem Something went wrong, most likely when concurrent builds were to fetch deps
@@ -25,6 +26,8 @@ if not exist "%DEPS_DIR%" (
 )
 if %errorlevel% neq 0 exit /b 3
 
+echo %BRANCH%
+echo %PHP_BUILD_CRT%
 cmd /c buildconf.bat --force
 if %errorlevel% neq 0 exit /b 3
 
