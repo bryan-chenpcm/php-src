@@ -78,18 +78,18 @@ function get_matrix_include(array $branches) {
 function get_windows_matrix_include(array $branches) {
     $jobs = [];
     foreach ($branches as $branch) {
-        $jobs[] = [
-            'branch' => $branch,
-            'x64' => true,
-            'zts' => true,
-            'opcache' => true,
-        ];
-        $jobs[] = [
-            'branch' => $branch,
-            'x64' => false,
-            'zts' => false,
-            'opcache' => false,
-        ];
+        // $jobs[] = [
+        //     'branch' => $branch,
+        //     'x64' => true,
+        //     'zts' => true,
+        //     'opcache' => true,
+        // ];
+        // $jobs[] = [
+        //     'branch' => $branch,
+        //     'x64' => false,
+        //     'zts' => false,
+        //     'opcache' => false,
+        // ];
         $jobs[] = [
             'branch' => $branch,
             'x64' => true,
