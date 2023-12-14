@@ -52,7 +52,7 @@ cmd /c configure.bat ^
 	--disable-test-ini
 if %errorlevel% neq 0 exit /b 3
 
-nmake /NOLOGO
+nmake snap
 if %errorlevel% neq 0 exit /b 3
 
 exit /b 0
