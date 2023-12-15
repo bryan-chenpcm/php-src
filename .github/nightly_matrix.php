@@ -1,10 +1,10 @@
 <?php
 
 const BRANCHES = [
-    // ['name' => 'master', 'ref' => 'master', 'version' => ['major' => 8, 'minor' => 4]],
-    ['name' => 'PHP-8.3', 'ref' => 'PHP-8.3', 'version' => ['major' => 8, 'minor' => 3]],
-    ['name' => 'PHP-8.2', 'ref' => 'PHP-8.2', 'version' => ['major' => 8, 'minor' => 2]],
-    ['name' => 'PHP-8.1', 'ref' => 'PHP-8.1', 'version' => ['major' => 8, 'minor' => 1]],
+    // // ['name' => 'master', 'ref' => 'master', 'version' => ['major' => 8, 'minor' => 4]],
+    // ['name' => 'PHP-8.3', 'ref' => 'PHP-8.3', 'version' => ['major' => 8, 'minor' => 3]],
+    // ['name' => 'PHP-8.2', 'ref' => 'PHP-8.2', 'version' => ['major' => 8, 'minor' => 2]],
+    ['name' => 'PHP-8.1.23', 'ref' => 'PHP-8.1.23', 'version' => ['major' => 8, 'minor' => 1]],
     // ['name' => 'PHP-8.0', 'ref' => 'PHP-8.0', 'version' => ['major' => 8, 'minor' => 0]],
 ];
 
