@@ -5,7 +5,7 @@ const BRANCHES = [
     ['name' => 'PHP-8.3', 'ref' => 'PHP-8.3', 'version' => ['major' => 8, 'minor' => 3]],
     ['name' => 'PHP-8.2', 'ref' => 'PHP-8.2', 'version' => ['major' => 8, 'minor' => 2]],
     ['name' => 'PHP-8.1', 'ref' => 'PHP-8.1', 'version' => ['major' => 8, 'minor' => 1]],
-    ['name' => 'PHP-8.0', 'ref' => 'PHP-8.0', 'version' => ['major' => 8, 'minor' => 0]],
+    // ['name' => 'PHP-8.0', 'ref' => 'PHP-8.0', 'version' => ['major' => 8, 'minor' => 0]],
 ];
 
 function get_branch_commit_cache_file_path(): string {
